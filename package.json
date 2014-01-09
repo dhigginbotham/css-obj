@@ -1,0 +1,25 @@
+{
+  "name": "css-obj",
+  "version": "0.0.0",
+  "description": "parse css as js objects",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test -R spec -t 4000"
+  },
+  "keywords": [
+    "css",
+    "object"
+  ],
+  "author": "dhigginbotham",
+  "license": "MIT",
+  "dependencies": {
+    "objected": "0.0.1"
+  },
+  "devDependencies": {
+    "expect.js": "~0.2.0",
+    "mocha": "~1.16.2"
+  }
+}
