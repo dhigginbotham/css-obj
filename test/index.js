@@ -1,18 +1,16 @@
 var css = require('..');
 var expect = require('expect.js');
+var path = require('path');
 
 describe('css parser', function () {
   
   it('should take a css file and turn it into an object', function (done) {
 
-    var file = './style.css';
+    var file = path.join(__dirname, 'style.css');
 
     css(file, function (err, data) {
-      
-      if (err) return done();
 
-      expect(err).to.be(undefined);
-      
+      expect(err).to.be(null);
       expect(data).to.be.an(Object);
       
       expect(data['.className'].background).to.eql('red');
